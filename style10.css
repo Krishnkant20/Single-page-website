@@ -419,7 +419,7 @@ margin-right: 10px;
     justify-content: center;
     min-height:100vh;
     background-color: seagreen;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   }
   .login{
     width:420px;
