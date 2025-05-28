@@ -1,520 +1,346 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+/* Base Reset and Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* toheadre start from here */
-#topheader{
-    width: 100%;
-    height: 50px;
-    background-color:white;
-    border: black solid 1px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    /* padding-top: 15px; */
-    align-items: center;
-    background-color: rgba(95, 158, 160, 0.39);
-    
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
-#topheader .num1{
-    font-size: 20px;
+
+/* ========== Top Header ========== */
+#topheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgba(95, 158, 160, 0.2);
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
 }
-/*===================================== navbar start from here =====================================*/
-#navbar{
-   
-    width: 100%
-    height : 50px;
-    border-color: solid black 2px;
-    }
-#navbar nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.247);
-     }
-    #navbar nav ul li a{
-       text-decoration: none;
-       color: black;
-       font-weight: bolder;
-    }
-    #navbar nav ul{
-        display: flex;
-   padding-left:30%;
-        width: 100%;
-        gap: 50px;
-        font-size: 20px;
-        list-style: none;
-        
-       
-    }
-    #navbar nav ul li:hover{
-        background-color:brown;
-        color:black ;
-        cursor: grab;
 
-    }
-    /* home section */
+#topheader .num1 {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-    #home {
-        
-        width:100%;
-        height: 100vh;
-        background-image: url(./wwe.jpeg);
-        background-repeat: no-repeat;
-        background-size:100%;
-        background-size: cover;
-         }
-         #home div{
-            padding-top: 300px;
-            padding-left: 100px;
-            font-weight: bolder;
-         }
-         #home div h1{
-            font-size: 30px;
-         }
-         #home div p{
-     justify-content: center;
-    }
-    
-    /* ===========================================about section start from here===================================== */
-    #about{
-    }
-      .abouttext{
-        display: flex;
-        flex-wrap: wrap;
-        height: 300px;
-        width: 100%;
-        margin-top: 70px;
-       
-      }
-      .head1{
-        text-align: center;
-        font-size: 40px;
-        text-decoration: underline;
-        font-weight: bolder;
-        color: black;
-           }
-           .head1:hover{
-            background-color: burlywood;
-            color: black;
-           }
-      .image1{
-        height: 400px;
-       width: 400px;
-       padding-left: 50px;
-       
-      }
-      .abouttext .content1{
-        height: 250px;
-        padding-top: 60px;
-        padding-left: 60px;
-        text-align: center;
-        background-color: rgba(255, 255, 0, 0.356);
-      }
-      .abouttext .btn1{
-        font-size: 20px;
-        color: black;
-        margin-top: 10px;
-        background-color:white;
-      }
-      .abouttext .btn1:hover{
-        background-color: cadetblue;
-        color: black;
-      }
-      /* ==================================================about part 2=================================== */
+/* ========== Navbar ========== */
+#navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
 
-      .abouttext1{
-        display: flex;
-        flex-wrap: wrap;
-        height: 300px;
-        width: 100%;
-        margin-top: 70px;
-       
-      }
-      .image2{
-        height: 450px;
-       width: 400px;
-       padding-left:  0px;
-      }
-      .abouttext1 .content2{
-        height: 230px;
-        padding-top: 60px;
-        padding-left: 200px;
-        text-align: center;
-        background-color: rgba(255, 127, 80, 0.322);
-      }
-      .abouttext1 .btn2{
-        font-size: 20px;
-        color: black;
-        margin-top: 10px;
-        background-color: white;
-      }
-      .abouttext1 .btn2:hover{
-        background-color: cadetblue;
-        color: black;
-      }
-      /* ========================================about part 3======================================================== */
-      .abouttext2{
-        display: flex;
-        flex-wrap: wrap;
-        height: 300px;
-        width: 100%;
-        margin-top: 70px;
-       
-      }
-      .image3{
-        height: 400px;
-       width: 400px;
-       padding-left: 50px;
-      }
-      .abouttext2 .content3{
-        padding-top: 40px;
-        padding-left: 30px;
-        text-align: center;
-        background-color: rgba(0, 100, 0, 0.363);
-        height: 200px;
-      }
-      .abouttext2 .btn3{
-        font-size: 20px;
-        color:black;
-        margin-top: 10px;
-        background-color: white;
-      }
-      .abouttext2 .btn3:hover{
-        background-color: cadetblue;
-        color: black;
-      }
-      /*======================================= service section start from here=========================== */
-      #ser{
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 100px;
-            background-color: rgba(151, 188, 143, 0.247);
-      }
-      .cards{
-        margin-top: 50px;
-        width: 300px;
-        background-color: rgba(127, 255, 212, 0.233);
-        border-radius: 5px;
-        box-shadow: 2px 2px 10px black;
-        gap: 30px;
-      }
+#navbar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 
-      .head5{
-        text-align: center;
-        font-size: 40px;
-        font-weight: bolder;
-        text-decoration: underline;
-      }
-      .photo img{
-        width: 100%;
-        
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .title{
-        text-align: center;
-      }
-      .des{
-        text-align: center;
-      }
-      .des button{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      .des button:hover{
-        background-color: crimson;
-        color: black;
-        transition: .5s;
-      }
-      /* ==================================================================next part */
-      .cards2{
-        margin-top: 50px;
-        width: 300px;
-        background-color: rgba(127, 255, 212, 0.233);
-        border-radius: 5px;
-        box-shadow: 2px 2px 10px black;
-        gap: 30px;
-      }
-      .photo2 img{
-        width: 100%;
-        
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .title2{
-        text-align: center;
-      }
-      .des2{
-        text-align: center;
-      }
-      .des2 button{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      .des2 button:hover{
-        background-color: crimson;
-        color: black;
-        transition: .5s;
-      }
-      /* =========================================================last part */
-      .cards3{
-        margin-top: 50px;
-        width: 300px;
-        background-color: rgba(127, 255, 212, 0.233);
-        border-radius: 5px;
-        box-shadow: 2px 2px 10px black;
-        gap: 30px;
-      }
-      .photo3 img{
-        width: 100%;
-        
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .title3{
-        text-align: center;
-      }
-      .des3{
-        text-align: center;
-      }
-      .des3 button{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      .des3 button:hover{
-        background-color: crimson;
-        color: black;
-        transition: .5s;
-      }
-      /* ====================================================================================== */
-      .cards3{
-        margin-top: 50px;
-        width: 300px;
-        background-color: rgba(127, 255, 212, 0.233);
-        border-radius: 5px;
-        box-shadow: 2px 2px 10px black;
-        gap: 30px;
-      }
-      .photo3 img{
-        width: 100%;
-        
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .title3{
-        text-align: center;
-      }
-      .des3{
-        text-align: center;
-      }
-      .des3 button{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      .des3 button:hover{
-        background-color: crimson;
-        color: black;
-        transition: .5s;
-      }
-      /*========================================== contact page start from here */
-.contact{
-  min-height: 100vh;
-  background-color:#e8f0fe ;
-  padding: 50px;
+#navbar nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#navbar nav ul li:hover {
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+}
+
+/* ========== Hero Section ========== */
+#home {
+  height: 90vh;
+  background: url('./wwe.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+}
+
+#home h1 {
+  font-size: 3rem;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* ========== Section Headings ========== */
+.head1, .head5 {
+  text-align: center;
+  font-size: 36px;
+  margin: 50px 0 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.head1:hover {
+  background-color: burlywood;
+}
+
+/* ========== About Section ========== */
+#about .abouttext,
+.abouttext1,
+.abouttext2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+.image1, .image2, .image3 {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.image1 img,
+.image2 img,
+.image3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content1, .content2, .content3 {
+  flex: 1 1 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
   text-align: center;
 }
-.container{
-  max-width:800px ;
-  margin: 0 auto;
+
+button.btn1, button.btn2, button.btn3 {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.container h2{
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #333;
+
+button:hover {
+  background-color: cadetblue;
 }
-.contact-wrapper{
-  display:grid ;
-  grid-template-columns: repeat(2 ,1fr);
-  grid-gap: 30px;
+
+/* ========== Services Section ========== */
+#ser {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: rgba(151, 188, 143, 0.1);
 }
-.contact-form{
-  text-align: left;
+
+.cards, .cards2, .cards3 {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
-.contact-form h3{
+
+.cards:hover, .cards2:hover, .cards3:hover {
+  transform: translateY(-5px);
+}
+
+.cards img, .cards2 img, .cards3 img {
+  width: 100%;
+  height: auto;
+}
+
+.title, .title2, .title3 {
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.des, .des2, .des3 {
+  padding: 15px;
+  text-align: center;
+}
+
+.des button, .des2 button, .des3 button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* ========== Contact Section ========== */
+.contact {
+  padding: 50px 20px;
+  background-color: #e8f0fe;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-form h3, .contact-info h3 {
+  margin-bottom: 20px;
   font-size: 24px;
-  margin-bottom: 20px;
-  color:#333 ;
 }
-.form-group{
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* ========== Login Page ========== */
+/* Login Page Styling */
+#pg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 10px;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9); /* gradient background */
+}
+
+.login {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: #333;
+  position: relative;
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2980b9;
+  font-size: 32px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 20px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  outline: none;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+.input-box input::placeholder {
+  color: #999;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
   margin-bottom: 20px;
 }
-input,textarea{
+
+.remember-forgot label {
+  color: #444;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login .btn {
   width: 100%;
   padding: 12px;
+  background: #2980b9;
+  border: none;
   border-radius: 8px;
-  border: none;
-  background-color: #f8f9fa;
-  color: #333;
-}
-input:focus,
-textarea:focus{
-  outline:none;
-  box-shadow: 0 0 8px #bbb;
-} 
-button{
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition:0.3s ease ;
+  transition: background 0.3s;
+}
 
+.login .btn:hover {
+  background: #2573a6;
 }
-button:hover{
-  background-color:#45a049 ;
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
-.contact-info{
-  text-align: left;
-  }
-  .contact-info h3{
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  .contact-info p{
-    margin-bottom: 10px;
-    color: #555;
-  }
-  .contact info i{
-color: #4caf50;
-margin-right: 10px;
-  }
-  @media screen and(max-width: 768px){
-    .container{
-      padding: 20px;
-    }
-    .contact-wrapper{
-      grid-template-columns:repeat(2,1fr);    }
-  }
-  /* ==================================================login page start from here */
-  #pg1{
-    display: flex;
-    justify-content: center;
-    min-height:100vh;
-    background-color: seagreen;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  }
-  .login{
-    width:420px;
-    background:purple;
-    color: white;
-    border-radius: 10px;
-    padding: 30px 40px;
-  }
-  .login h1{
-    font-size: 36px;
+
+.register-link a {
+  color: #2980b9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* ========== Responsive Adjustments ========== */
+@media (max-width: 768px) {
+  #topheader {
+    flex-direction: column;
+    font-size: 12px;
     text-align: center;
   }
-  .login .input-box{
-    width: 100%;
-    height: 50px;
-    background:salmon;
-    margin: 30px 0;
+
+  #home h1 {
+    font-size: 2rem;
   }
-  .input-box input{
-    width: 100%;
-    height: 100%;
-    background:transparent ;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-  }
-  .input-box input::placeholder{
-    color: #fff;
-  }
-  .input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(-50%);
-    font-size: 20px;
-  }
-  .login .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-  }
-  .remember-forgot label input{
-    accent-color: white;
-    margin-right: 3px;
-  }
-  .remember-forgot a{
-    color: white;
-    text-decoration: none;
-  }
-  .remember-forgot a:hover{
-    text-decoration: underline;
-  }
-.login .btn{
-width: 100%;
-height: 45px;
-background:white ;
-border: none;
-outline:none ;
-border-radius: 40px;
-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-cursor: pointer;
-font-size: 16px;
-color: #333;
-font-weight: 600;
-}
-.login .register-link{
-  font-size:14.5px ;
-  text-align: center;
-  margin:20px 0 15px;
-}
-.register-link p a{
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-.register-link p a:hover{
-text-decoration: underline;
-}
-@media(max-width:450px){
-  #topheader{
-    display: none;
+
+  .content1, .content2, .content3 {
+    padding: 10px;
   }
 }
-
-
-
-
-
-      
-      
-
-      
-      
